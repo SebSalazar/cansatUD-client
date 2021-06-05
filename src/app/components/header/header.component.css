@@ -1,0 +1,103 @@
+/* Variables */
+:root {
+  --colorp: #2fa936;
+  --fondo: #111111;
+  --fuente: "Bebas Neue";
+}
+
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: #111111;
+  padding: 30px 0;
+}
+
+header .contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  font-family: 'Russo One', sans-serif;
+  font-weight: normal;
+  color:   #1AA43E ;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+header .logo i{
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+header .logo i:hover{
+  color: #7E7578 ;
+  transition: .4s ease-in-out;
+}
+
+header .logo:hover{
+  color: #7E7578 ;
+  transition: .4s ease-out;
+  font-size: 38px;
+}
+
+header nav a{
+  cursor: pointer;
+  color: #AAA;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: "Russo One", sans-serif;
+}
+
+header nav a:hover,
+header nav a.activo{
+  color: #1AA43E;
+}
+
+/* Media Queries - Responsive */
+@media screen and (max-width: 800px){
+
+  header .logo{
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+  header .contenedor{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header nav a{
+    font-size: 15px;
+  }
+
+  header .logo:hover{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 350px){
+  header nav a{
+    font-size: 12px;
+  }
+
+  header .logo{
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  header .logo:hover{
+    font-size: 28px;
+  }
+
+}

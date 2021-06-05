@@ -1,0 +1,12 @@
+<header>
+  <div id="inicio" class="contenedor">
+    <h2 data-aos="fade-right" data-aos-duration="1200" routerLink="/" class="logo"><i class="fas fa-user-astronaut"></i>CanSat UD</h2>
+    <nav data-aos="fade-left" data-aos-duration="1200">
+        <a routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['/']">Inicio</a>
+        <a routerLinkActive="activo" [routerLink]="['/graphics']">Graficos</a>
+        <a (click)="toDatos()" routerLinkActive="activo" >Datos</a>
+        <a routerLinkActive="activo" [routerLink]="['/about']">About</a>
+        <a (click)="toRedes()" routerLinkActive="activo">Contacto</a>
+    </nav>
+  </div>
+</header>

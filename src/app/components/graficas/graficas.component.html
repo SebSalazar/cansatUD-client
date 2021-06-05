@@ -1,0 +1,200 @@
+<div class="contenedorgra">
+  <div class="containerbuton">
+    <p>Servidor: <i class="fas fa-check-circle"></i></p>
+
+    <ng-container *ngIf="iniciarS else accion">
+      <button (click)="cambioS();" class="boton">{{infoBut1}}</button>
+    </ng-container>
+
+    <ng-template #accion>
+      <button (click)="cambioP()" role="button" class="boton">{{infoBut2}}</button>
+      <button (click)="nuevaSimu()" role="button" class="boton">Terminar simulacion</button>
+    </ng-template>
+
+    <div class="csv" *ngIf="csv">
+      <button role="button" class="boton">Descargar CSV</button>
+      <a><i (click)="reload()" class="fas fa-sync"></i></a>
+    </div>
+
+  </div>
+
+  <div class="mapita">
+    <p><i class="fas fa-map-marked-alt"></i> Ubicacion en tiempo real</p>
+    <div style="height: 55vh;">
+      <app-lfmap></app-lfmap>
+    </div>
+  </div>
+
+  <div data-aos="fade-left" data-aos-duration="1200" data-aos-once="true" class="grid gridF">
+    <div class="crono">
+      <form class="container">
+        <p><i class="fas fa-stopwatch"></i> Tiempo de vuelo</p>
+        <input type="radio" id="init" name="control" checked="checked">
+        <input type="radio" id="stop" name="control">
+        <input type="radio" id="start" name="control">
+        <input type="reset" id="reset" name="control">
+
+        <time><i></i><b></b><i></i><b></b><i></i></time>
+
+        <div class="controls">
+          <label for="stop">Stop</label>
+          <label for="start">Start</label>
+          <label for="reset">Reset</label>
+        </div>
+      </form>
+      <div class="grid2 grid2F">
+        <div class="bateria">
+          <p><i class="fas fa-battery-three-quarters"></i> Bateria</p>
+          <div class="contann">
+              <progress id="progressbar" max="100" value="40"></progress>
+              <div class="progress-value">50%</div>
+          </div>
+        </div>
+        <div class="caidalibre">
+          <p><i class="fas fa-plane-arrival"></i> Caida libre</p>
+          <span>
+            {{caidaLibre}}
+          </span>
+          <div *ngIf="caidaLibre === 'NO'" matTooltip="Jajaja" class="iconcaida1">
+            <i  class="fas fa-check-square"></i>
+          </div>
+          <div *ngIf="caidaLibre === 'YES'" class="iconcaida2">
+            <i  class="fas fa-exclamation-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <canvas id="Altura">{{chart}}</canvas>
+      <div class="card-content">
+        <h3>Altura</h3>
+        <p>Altura en metros que va alcanzando el cohete</p>
+      </div>
+    </div>
+
+    <div class="velox">
+      <p><i class="fas fa-wind"></i> Velocidad</p>
+      <div id="speed-gauge">
+        <div class="gauge">
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+          <div class="subslice"></div>
+          <div class="rpm">0</div>
+          <div class="rpm">1</div>
+          <div class="rpm">2</div>
+          <div class="rpm">3</div>
+          <div class="rpm">4</div>
+          <div class="rpm">5</div>
+          <div class="rpm">6</div>
+          <div class="rpm">7</div>
+          <div class="rpm">8</div>
+
+          <!--RPM Slice-->
+
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+          <div class="rpmSlice"></div>
+
+
+          <div class="rpmSpeed">0</div>
+          <div class="rpmSpeed">15</div>
+          <div class="rpmSpeed">30</div>
+          <div class="rpmSpeed">45</div>
+          <div class="rpmSpeed">60</div>
+          <div class="rpmSpeed">75</div>
+          <div class="rpmSpeed">90</div>
+          <div class="rpmSpeed">105</div>
+          <div class="rpmSpeed">120</div>
+          <div class="rpmSpeed">135</div>
+          <div class="rpmSpeed">150</div>
+          <div class="rpmSpeed">165</div>
+          <div class="rpmSpeed">180</div>
+          <div class="rpmSpeed">195</div>
+          <div class="rpmSpeed">210</div>
+          <div class="rpmSpeed">225</div>
+          <div class="rpmSpeed">240</div>
+          <div class="rpmSpeed">m/s</div>
+
+          <div id="sui"></div>
+          <div id="SUICIRCLE" class="suiCircle"></div>
+          <div class="bottomStroke">
+
+            <div class="speedplus">0</div>
+            <div style="position: absolute; left: 50%; top: 24%; ">
+              <div class="gear" style="color: orangered">PELIGRO</div>
+            </div>
+          </div>
+
+          <div class="gauge-circle-1"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <canvas id="Temperatura">{{chart2}}</canvas>
+      <div class="card-content">
+        <h3>Temperatura</h3>
+        <p>Temperatura que registra el cohete durante el vuelo en grados Celcius</p>
+      </div>
+    </div>
+
+    <div id="xdd" class="card">
+      <canvas id="Aceleracion">{{chart3}}</canvas>
+      <div class="card-content">
+        <h3>Acelaracion (X,Y,Z)</h3>
+        <p>Aceleraciones que experimenta el cohete en los tres campos</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <canvas id="PresionB">{{chart4}}</canvas>
+      <div class="card-content">
+        <h3>Presion Barometrica</h3>
+        <p>La presión atmosferica es la fuerza que ejerce el aire sobre el cohete</p>
+      </div>
+    </div>
+
+    <div>
+      <!-- INFO EXTRA O GRAFICAS EXTRAS -->
+    </div>
+
+    <div class="card">
+      <canvas id="Giro">{{chart5}}</canvas>
+      <div class="card-content">
+        <h3>Giroscopio (X,Y,Z)</h3>
+        <p>Los datos de rotación que va experimentando el cansat en los 3 ejes de inclinación</p>
+      </div>
+    </div>
+
+  </div>
+</div>

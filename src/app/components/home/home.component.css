@@ -1,0 +1,428 @@
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+
+/*  Principal */
+.principal {
+  font-size: 16px;
+  min-height: 40.62em; /* em para hacerlo responsive */
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url("https://images4.alphacoders.com/848/848687.png");
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: end;
+}
+
+.principal .contenedor {
+  margin-bottom: 6.25em;
+}
+
+.principal .titulo {
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.principal .titulo i {
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0.31em;
+  color: #fff;
+  font-size: 0.65em;
+  margin-left: 0.35em;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.principal .titulo i:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  border-radius: 0.31em;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+.principal .descripcion {
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.principal .boton {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.principal .boton:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.5);
+}
+
+.principal .boton i {
+  margin-right: 1.25em;
+}
+
+/* ---Menu --- */
+.contenedor2 {
+  min-height: 26em;
+  margin: auto;
+}
+
+.mensaje {
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  font-weight: 600;
+  color: #1aa43e;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contenedor2 .o-grid {
+  font-family: "Bebas Neue", cursive;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+}
+
+.o-grid {
+  margin-top: 1.2em;
+  display: grid;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1.5rem;
+  text-align: center;
+}
+
+.o-grid--3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.o-grid .ima {
+  width: 75px;
+  height: 75px;
+  margin-bottom: 7px;
+}
+
+.o-grid .ima:hover {
+  transform: translateY(-5px);
+}
+
+.o-grid h2 {
+  text-align: center;
+  margin: 7px 0px;
+  color: #19a33d;
+}
+
+.o-grid p {
+  font-family: "Open Sans", sans-serif;
+  text-align: initial;
+  margin: 0px 15px;
+  color: #7f7679;
+}
+
+/* --- Componentes -- */
+.contenedor5 {
+  min-height: 30em;
+  margin: auto;
+}
+
+.contenedor3 {
+  font-size: 14px;
+  min-height: 30em;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%),
+    url("https://free4kwallpapers.com/uploads/originals/2020/04/17/rocket-astronaut-sw-wallpaper.jpg");
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  float: left;
+  display: flex;
+}
+
+.contenedor3 .titulo2 {
+  color: #ffffff;
+  align-items: center;
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.contenedor3 .titulo2 i {
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0.31em;
+  color: #fff;
+  font-size: 0.5em;
+  margin-left: 0.35em;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.contenedor3 .titulo2 i:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  border-radius: 0.31em;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+.contenedor3 .descripcion {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.contenedor3 .boton {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.contenedor3 .boton:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor3 .boton i {
+  margin-right: 1.25em;
+}
+
+.contenedor4 {
+  font-size: 14px;
+  min-height: 30em;
+  margin: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9");
+  background-position: center center;
+  background-size: cover;
+  width: 50%;
+  float: right;
+  display: flex;
+}
+
+.contenedor4 .titulo3 {
+  color: #ffffff;
+  align-items: center;
+  font-weight: 600;
+  font-size: 3.12em;
+  margin-bottom: 0.4em;
+}
+
+.contenedor4 .titulo3 i {
+  background: rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 0.31em;
+  color: #fff;
+  font-size: 0.5em;
+  margin-left: 0.35em;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+
+.contenedor4 .titulo3 i:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  border-radius: 0.31em;
+  color: #000;
+  transform: translateY(-4px);
+}
+
+.contenedor4 .descripcion {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.contenedor4 .boton {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 0.31em;
+  padding: 0.93em 1.87em;
+  color: #fff;
+  margin-right: 1.25em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.12em;
+}
+
+.contenedor4 .boton:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor4 .boton i {
+  margin-right: 1.25em;
+}
+
+/* Media Queries - Responsive */
+@media screen and (max-width: 800px) {
+  .principal {
+    font-size: 14px;
+  }
+  .principal .descripcion {
+    max-width: 100%;
+  }
+
+  .contenedor3 .descripcion {
+    max-width: 100%;
+    font-size: 0.78em;
+  }
+  .contenedor3 .titulo2 {
+    font-size: 1.85em;
+  }
+
+  .contenedor4 .descripcion {
+    max-width: 100%;
+    font-size: 0.78em;
+  }
+  .contenedor4 .titulo3 {
+    font-size: 1.85em;
+  }
+
+  .o-grid--3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .o-grid .ima {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mensaje {
+    font-size: 30px;
+  }
+
+  .contenedor2 .o-grid {
+    font-size: 12px;
+  }
+
+  .o-grid h2 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mensaje {
+    font-size: 20px;
+  }
+
+  .o-grid--3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-bottom: 8px;
+  }
+
+  .contenedor4 {
+    width: 100%;
+    position: absolute;
+    transform: translateY(30em);
+  }
+
+  .contenedor3 {
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/* MODAL */
+.input-group {
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  font-family: "Russo One", cursive;
+  text-align: center;
+  margin: 50px 10px;
+}
+
+.input-group label {
+  width: 100%;
+  display: block;
+  position: absolute;
+  color: #1aa43e;
+  font-size: 16px;
+  top: -22px;
+  left: 0px;
+}
+
+label:hover {
+  cursor: text;
+}
+
+.input-group select {
+  transition: all 0.3s ease;
+  padding: 6px 12px;
+  font-size: 16px;
+  outline: 0;
+  border: 0.126em solid #6b6b6b;
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.input-group select:focus {
+  border: 0.126em solid #1aa43e;
+}
+
+.boton2 {
+  font-family: "Russo One", sans-serif;
+  background: rgba(26, 164, 62);
+  padding: 0.47em 1.07em;
+  cursor: pointer;
+  font-size: 1.14em;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgb(255 255 255 / 0%);
+  outline: 2px solid;
+  outline-color: rgba(11, 85, 31, 0.8);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  margin-top: 8px;
+}
+
+.boton2:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(26, 164, 62, 0.2);
+  outline-color: rgba(26, 164, 62, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px rgb(26, 164, 62);
+  background: #000;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(255, 255, 255, 0.5);
+}

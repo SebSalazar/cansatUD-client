@@ -1,0 +1,63 @@
+<main>
+  <div data-aos="fade-up" data-aos-duration="1200" class="principal">
+    <div data-aos="zoom-out-down" data-aos-duration="1200" class="contenedor">
+      <h2  class="titulo">CanSat - Simulador de Vuelo<i (click)="generar()" class="fas fa-angle-double-right"></i></h2>
+      <p class="descripcion">
+        {{fondos[random].info}}
+      </p>
+      <button (click)="toSimul()" role="button" class="boton"><i class="fas fa-rocket"></i>Simulación</button>
+      <button (click)="toHard()" role="button" class="boton"><i class="fas fa-stopwatch"></i>Prueba real</button>
+    </div>
+  </div>
+
+  <div data-aos="fade-down" data-aos-duration="1200" data-aos-once="true" id="datax"class="contenedor2" >
+    <h2 class="mensaje">Analisis de datos en tiempo real</h2>
+    <div class="o-grid o-grid--3">
+      <div *ngFor="let item of infodatos; let i = index">
+        <img class="ima animated infinite pulse delay-1s" [src]="item.img" alt="">
+        <h2>{{item.nombre}}</h2>
+        <p><b> {{item.info}} </b></p>
+      </div>
+    </div>
+  </div>
+
+  <div data-aos="zoom-in-up" data-aos-duration="1200" data-aos-once="true" id="seccion1" class="contenedor5">
+    <div class="contenedor3">
+      <div class="contenedor">
+        <h2 class="titulo2">Simulación - Test<i class="fas fa-laptop-code"></i></h2>
+        <p class="descripcion">
+          En este apartado se realiza una simulación del vuelo de un CanSat, todos los datos son tomados
+          de pruebas manuales ya hechas
+        </p>
+        <button (click)="change()" id="prueba" role="button" class="boton">
+          <i class="fas fa-space-shuttle"></i><b> {{infoButon}} </b></button>
+      </div>
+    </div>
+
+    <div data-aos="zoom-in-down" data-aos-duration="1200" data-aos-once="true" id="seccion2" class="contenedor4">
+      <div class="contenedor">
+        <h2 class="titulo3">Prueba con Hardware<i class="far fa-memory"></i></h2>
+        <p class="descripcion">
+          En este apartado se hace una prueba directa con el dispositivo funcionando y enviando
+          los diferentes datos en tiempo real, es necesario que ajuste antes los datos de puerto
+        </p>
+        <button (click)="change2()" id="prueba2" role="button" class="boton">
+          <i class="fas fa-satellite-dish"></i><b> {{infoButon2}} </b></button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="desblo" data-aos="fade-up" data-aos-duration="800" data-aos-once="true" class="cuerpogra">
+    <app-graficas></app-graficas>
+  </div>
+
+  <div style="display: none;" id="sel" class="input-group">
+    <label> *Lista de puertos disponibles, elige uno para continuar</label>
+    <select name="ports" id="puertos">
+
+    </select>
+    <br>
+    <a [routerLink]="['/graphics']"><button (click)="seleccionPuerto()"  class="boton2">Ir a simular</button></a>
+  </div>
+
+</main>
