@@ -2,7 +2,7 @@
 	<h1> Cansat-front-UD </h1>
 </div>
 <div align="center">
-	<a href="#">
+	<a href="https://sebsalazar.github.io/cansatUD-client/">
 		<img src="https://i.imgur.com/X1a7eRA.jpeg" alt="Web" height="600" width="430">
 	</a>
 </div>
@@ -27,9 +27,21 @@ Esta aplicación es la parte del cliente para el backend anteriormente subido
 <a href="https://github.com/SebSalazar/cansat-node">
 	 cansat-node-server
 </a>
-, esta aplicación se construyo para el semillero de investigación **ATL** de la Universidad Distrital y tiene como objetivo el poder dar un seguimiento en tiempo real a pequeños satelites (cansats), monitoreando en la interfaz los datos calculos por los dispositivos IoT.
+, esta aplicación se construyo para el semillero de investigación ATL de la Universidad Distrital y tiene como objetivo el poder dar un seguimiento en tiempo real a pequeños satelites (cansats), monitoreando en la interfaz los datos calculos por los dispositivos IoT.
 
-## 💥 Notas
+## 📟 Website
+
+<div align="center">
+  <a href="https://github.com/SebSalazar/cansat-node">
+    Cansat-UD
+  </a>
+</div>
+
+### Observaciones
+
+Las simulaciones no funcionaran porque el servidor esta **off**; para que funcione correctamente es necesario descargar el servidor e iniciarlo, despues de esto funcionara bien el modo simulación, si desea correr el modo _hardware_ es necesario que conecte los dispositivos recordando que la información se recibe por **puerto** serial.
+
+## 📑 Notas
 
 Para correr este proyecto en tu PC, descargalo o clonalo:
 
