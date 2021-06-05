@@ -39,32 +39,32 @@ export class HomeComponent implements OnInit {
   infodatos = [
     {
       nombre: 'Velocidad',
-      img: '../../../assets/img/Velocidad.png',
+      img: './src/assets/img/Velocidad.png',
       info: 'Se registra cada 0.5 segundos la velocidad que lleva el cohete, en caso que la velocidad que se analice no tenga logica se dara la respectiva alerta.'
     },
     {
       nombre: 'Aceleración',
-      img: '../../../assets/img/Aceleracion.png',
+      img: './src/assets/img/Aceleracion.png',
       info: 'Las aceleraciones que va presentando el cohete en las tres dimensiones'
     },
     {
       nombre: 'Altura',
-      img: '../../../assets/img/Altura.png',
+      img: './src/assets/img/Altura.png',
       info: 'Se grafica la altura que va alcanzado el cohete cada 0.5 segundos'
     },
     {
       nombre: 'Temperatura',
-      img: '../../../assets/img/Temperatura.png',
+      img: './src/assets/img/Temperatura.png',
       info: 'La temperatura que va registrando el dispositivo, obtenida mediante sensores.'
     },
     {
       nombre: 'Tiempo',
-      img: '../../../assets/img/Tiempo.png',
+      img: './src/assets/img/Tiempo.png',
       info: 'Se registra el tiempo de toda la simulación desde su inicio hasta finalizar.'
     },
     {
       nombre: 'Giroscopio',
-      img: '../../../assets/img/Giroscopio.png',
+      img: './src/assets/img/Giroscopio.png',
       info: 'Los datos de orientacion del dispositivo en el espacio de representan mediante un gráfico en tres dimensiones.'
     }
   ];

@@ -71,7 +71,7 @@ npm install -g @angular/cli@latest
 1. Despues de haber clonado o descargado el proyecto
 2. Ubicarse sobre la carpeta raiz
 3. Ejecutar **npm install** para instalar los requerimientos 
-4. Listo!
+4. Correr el proyecto con **ng serve -o** y listo!
 
 ## 👽 Autores
 
