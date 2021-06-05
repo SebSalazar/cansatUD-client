@@ -32,7 +32,7 @@ Esta aplicación es la parte del cliente para el backend anteriormente subido
 ## 📟 Website
 
 <div align="center">
-  <a href="https://github.com/SebSalazar/cansat-node">
+  <a href="https://sebsalazar.github.io/cansatUD-client/">
     Cansat-UD
   </a>
 </div>
