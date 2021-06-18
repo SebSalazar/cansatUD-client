@@ -64,6 +64,7 @@
   cursor: pointer;
   transition: 0.3s ease all;
   font-size: 1.12em;
+  margin-top: 7px;
 }
 
 .principal .boton:hover {
